@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/itemHome">
+
+    <fragment
+        android:id="@+id/itemHome"
+        android:name="com.barryzea.pizzabuy.view.PizzasFragment"
+        android:label="@string/menu_pizzas"
+        tools:layout="@layout/fragment_pizzas" >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/itemSearch"
+        android:name="com.barryzea.pizzabuy.view.SearchFragment"
+        android:label="Buscar"
+        tools:layout="@layout/fragment_search" >
+
+    </fragment>
+    <activity
+        android:id="@+id/itemCar"
+        android:name="com.barryzea.pizzabuy.view.ShoppingCartActivity"
+        android:label="@string/shopping_car"
+        tools:layout="@layout/activity_shopping_cart" />
+</navigation>

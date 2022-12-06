@@ -1,0 +1,43 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.PizzaBuy" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/yellow_500</item>
+        <item name="colorPrimaryVariant">@color/yellow_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/orange_200</item>
+        <item name="colorSecondaryVariant">@color/orange_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <!--Estas dos configuraciones solo funcionan fuera del nuevo estilo creado para el toolbar-->
+        <item name="android:statusBarColor" >@color/white</item>
+        <item name="android:windowLightStatusBar" tools:ignore="newApi">true</item>
+        <!---->
+        <item name="actionBarTheme">@style/MyThemeToolbar</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="ShapeAppearanceOverlay.MyApp.Button.Circle" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="MyThemeToolbar" parent="@style/ThemeOverlay.AppCompat.Light">
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:background">@color/white</item>
+        <item name="elevation">0dp</item>
+        <item name="fontFamily">@font/carter_one</item>
+
+        <item name="titleTextAppearance">@style/My_TextAppearance_Toolbar</item>
+        <item name="android:titleTextAppearance">@style/My_TextAppearance_Toolbar</item>
+
+    </style>
+    <style name="My_TextAppearance_Toolbar" parent="@style/TextAppearance.MaterialComponents.Headline1">
+    <!--<item name="fontFamily">@font/courgette</item>
+    <item name="android:fontFamily">@font/courgette</item>
+    <item name="android:textStyle">bold|italic</item>-->
+    <item name="android:textSize">30sp</item>
+    </style>
+    <style name="SplashScreenTheme" parent="Theme.PizzaBuy">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+</resources>

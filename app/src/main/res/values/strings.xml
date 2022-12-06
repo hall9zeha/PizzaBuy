@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">PizzaBuy</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Inicio</string>
+    <string name="shoppingCar">Carrito</string>
+    <string name="search">Buscar</string>
+    <string name="menu_pizzas">Pizzas</string>
+    <string name="shopping_car">Carrito de compras</string>
+    <string name="custom">Personalizar</string>
+    <string name="placeholderText">La receta original puede utilizar una mezcla de setas, pero no lleva queso ni tomate. Aunque en versiones más contemporáneas se agregan quesos y salsa, incluso puede darse en un orden invertido (pan, setas, queso y salsa o pan, setas salsa y queso).</string>
+    <string name="addCar">Agregar</string>
+    <string name="delete">Eliminar</string>
+    <string name="update">Actualizar</string>
+    <string name="moreFlavors">Combinar</string>
+    <string name="moreFlavorsText">Agrega otro sabor</string>
+    <string name="pizzaCombinedDescription">Pizza de varios sabores, Combina más sabores en tu pizza, puedes agregar hasta cuatro sabores diferentes.</string>
+    <string name="total_price">&lt;b>&lt;big>Total: $ %1$.2f&lt;big/> <!--&lt;/b>&lt;br/> (%2$d x S%3$.2f)--></string>
+    <string name="pay">Pagar</string>
+    <string name="msgShop">Gracias por tu compra, disfuta de tu pizza</string>
+    <string name="accept">Aceptar</string>
+</resources>

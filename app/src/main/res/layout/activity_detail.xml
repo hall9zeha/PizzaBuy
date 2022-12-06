@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:background="@color/design_default_color_surface"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    tools:context=".view.DetailActivity">
+
+    <TextView
+        android:id="@+id/tvNameDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/common_padding_default"
+        android:layout_marginTop="@dimen/common_padding_default"
+        android:fontFamily="@font/carter_one"
+        android:textColor="@color/orange_700"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/ivDetail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ivDetail"
+        tools:text="Peperoni" />
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:id="@+id/ivDetail"
+        tools:src="@drawable/pizza_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/common_padding_default"
+        android:layout_marginEnd="@dimen/common_padding_default"/>
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/HeaderDivider"
+        app:dividerColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivDetail"
+        android:layout_marginTop="@dimen/common_padding_min"
+        android:layout_marginStart="@dimen/common_padding_default"
+        android:layout_marginEnd="@dimen/common_padding_default"/>
+
+    <TextView
+        android:id="@+id/tvPriceDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_shape"
+        android:fontFamily="@font/carter_one"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:padding="@dimen/common_padding_min"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/HeaderDivider"
+        app:layout_constraintEnd_toEndOf="@id/HeaderDivider"
+        app:layout_constraintStart_toStartOf="@id/HeaderDivider"
+        app:layout_constraintTop_toBottomOf="@id/HeaderDivider"
+        tools:text="13S" />
+
+    <TextView
+        android:id="@+id/tvDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_padding_middle"
+        android:fontFamily="@font/carter_one"
+        android:padding="@dimen/common_padding_default"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@id/HeaderDivider"
+        app:layout_constraintStart_toStartOf="@id/HeaderDivider"
+        app:layout_constraintTop_toBottomOf="@id/HeaderDivider"
+        tools:text="@string/placeholderText" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/footerDivider"
+        app:layout_constraintStart_toStartOf="@id/tvDesc"
+        app:layout_constraintEnd_toEndOf="@id/tvDesc"
+        app:layout_constraintTop_toBottomOf="@id/tvDesc"
+        android:layout_marginTop="@dimen/common_padding_default"
+        android:layout_marginStart="@dimen/common_padding_default"
+        android:layout_marginEnd="@dimen/common_padding_default"
+        />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/swMoreFlavors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/common_padding_min"
+
+        android:fontFamily="@font/carter_one"
+        android:text="@string/moreFlavors"
+        app:layout_constraintBottom_toTopOf="@id/btnAddFlavor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/footerDivider" />
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnAddFlavor"
+        app:icon="@drawable/ic_add"
+        app:iconTint="@color/black"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:iconGravity="textStart"
+        android:focusable="true"
+        app:rippleColor="@color/yellow_500"
+        app:backgroundTint="@color/green_500"
+        app:strokeWidth="0dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:insetRight="0dp"
+        android:insetLeft="0dp"
+        app:iconPadding="0dp"
+        app:layout_constraintStart_toStartOf="@id/footerDivider"
+        app:layout_constraintTop_toBottomOf="@id/swMoreFlavors"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MyApp.Button.Circle"
+
+        />
+
+    <TextView
+        android:id="@+id/tvAddFlavor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/common_padding_default"
+        android:ellipsize="end"
+        android:fontFamily="@font/carter_one"
+        android:maxLines="1"
+        android:text="@string/moreFlavorsText"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/btnAddFlavor"
+        app:layout_constraintStart_toEndOf="@id/btnAddFlavor"
+        app:layout_constraintTop_toTopOf="@id/btnAddFlavor"
+
+        tools:visibility="visible" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lnTopics"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnAddFlavor"
+        android:padding="@dimen/common_padding_default">
+
+
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnLess"
+        app:backgroundTint="@android:color/transparent"
+        app:icon="@drawable/ic_arrow_left"
+        app:iconSize="40dp"
+        app:strokeWidth="0dp"
+        app:iconTint="@color/black"
+        app:iconGravity="textStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lnTopics"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_marginTop="@dimen/common_padding_default"
+        android:layout_marginStart="@dimen/common_padding_default"/>
+
+    <TextView
+        android:id="@+id/tvQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/common_padding_min"
+        android:fontFamily="@font/carter_one"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/btnLess"
+        app:layout_constraintStart_toEndOf="@id/btnLess"
+        app:layout_constraintTop_toTopOf="@id/btnLess"
+        tools:text="2" />
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnMore"
+        app:backgroundTint="@android:color/transparent"
+        app:icon="@drawable/ic_arrow_right"
+        app:iconSize="40dp"
+        app:strokeWidth="0dp"
+        app:iconTint="@color/black"
+        app:iconGravity="textStart"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        app:layout_constraintTop_toTopOf="@id/tvQuantity"
+        app:layout_constraintBottom_toBottomOf="@id/tvQuantity"
+        app:layout_constraintStart_toEndOf="@id/tvQuantity"
+        android:layout_marginStart="@dimen/common_padding_min"
+       />
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/carter_one"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/btnMore"
+        app:layout_constraintStart_toEndOf="@id/btnMore"
+        app:layout_constraintTop_toTopOf="@id/btnMore"
+        tools:text="Total: S/. 25.00" />
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fabAddCar"
+        android:text="@string/addCar"
+        app:icon="@drawable/ic_shopping_cart"
+        app:backgroundTint="@color/yellow_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnLess"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="@dimen/common_padding_middle"
+        android:layout_marginEnd="@dimen/common_padding_min"
+        android:layout_marginBottom="@dimen/common_padding_middle"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="yellow_200">#FFffff56</color>
+    <color name="yellow_500">#FFffd600</color>
+    <color name="yellow_700">#FFc67c00</color>
+    <color name="orange_200">#FFff9e40</color>
+    <color name="orange_700">#FFc43c00</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green_500">#FF00c853</color>
+    <color name="color_badge">#F16868</color>
+
+</resources>

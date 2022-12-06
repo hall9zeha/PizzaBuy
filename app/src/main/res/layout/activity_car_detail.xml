@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:background="@color/design_default_color_surface"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:context=".view.DetailCarActivity">
+
+        <TextView
+            android:id="@+id/tvNameDetail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_padding_default"
+            android:layout_marginTop="@dimen/common_padding_default"
+            android:fontFamily="@font/carter_one"
+            android:textColor="@color/orange_700"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/ivDetail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/ivDetail"
+            tools:text="Peperoni" />
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:id="@+id/ivDetail"
+            tools:src="@drawable/pizza_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/common_padding_default"
+            android:layout_marginEnd="@dimen/common_padding_default"/>
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/HeaderDivider"
+            app:dividerColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivDetail"
+            android:layout_marginTop="@dimen/common_padding_min"
+            android:layout_marginStart="@dimen/common_padding_default"
+            android:layout_marginEnd="@dimen/common_padding_default"/>
+
+        <TextView
+            android:id="@+id/tvPriceDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textview_shape"
+            android:fontFamily="@font/carter_one"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:padding="@dimen/common_padding_min"
+            app:layout_constraintBottom_toBottomOf="@id/HeaderDivider"
+            app:layout_constraintEnd_toEndOf="@id/HeaderDivider"
+            app:layout_constraintStart_toStartOf="@id/HeaderDivider"
+            app:layout_constraintTop_toBottomOf="@id/HeaderDivider"
+            tools:text="13S" />
+
+        <TextView
+            android:id="@+id/tvDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_padding_middle"
+            android:fontFamily="@font/carter_one"
+            android:padding="@dimen/common_padding_default"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@id/HeaderDivider"
+            app:layout_constraintStart_toStartOf="@id/HeaderDivider"
+            app:layout_constraintTop_toBottomOf="@id/HeaderDivider"
+            tools:text="@string/placeholderText" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/footerDivider"
+            app:layout_constraintStart_toStartOf="@id/tvDesc"
+            app:layout_constraintEnd_toEndOf="@id/tvDesc"
+            app:layout_constraintTop_toBottomOf="@id/tvDesc"
+            android:layout_marginTop="@dimen/common_padding_default"
+            android:layout_marginStart="@dimen/common_padding_default"
+            android:layout_marginEnd="@dimen/common_padding_default"
+            />
+        <TextView
+            android:id="@+id/tvQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textview_shape"
+            android:fontFamily="@font/carter_one"
+            android:gravity="center"
+            android:textColor="@color/black"
+
+            android:textStyle="bold"
+            android:padding="@dimen/common_padding_min"
+            app:layout_constraintBottom_toBottomOf="@id/footerDivider"
+            app:layout_constraintEnd_toEndOf="@id/footerDivider"
+            app:layout_constraintStart_toStartOf="@id/footerDivider"
+            app:layout_constraintTop_toBottomOf="@id/footerDivider"
+            tools:text="13S" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lnTopics"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/footerDivider"
+            android:padding="@dimen/common_padding_default">
+
+
+
+        </LinearLayout>
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fabUpdateCar"
+            android:text="@string/update"
+            app:icon="@drawable/ic_update"
+            app:backgroundTint="@color/yellow_500"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lnTopics"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="@dimen/common_padding_default"
+            android:layout_marginEnd="@dimen/common_padding_min"
+            android:layout_marginBottom="@dimen/common_padding_middle"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
