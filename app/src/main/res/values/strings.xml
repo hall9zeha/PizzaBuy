@@ -17,6 +17,6 @@
     <string name="pizzaCombinedDescription">Pizza de varios sabores, Combina más sabores en tu pizza, puedes agregar hasta cuatro sabores diferentes.</string>
     <string name="total_price">&lt;b>&lt;big>Total: $ %1$.2f&lt;big/> <!--&lt;/b>&lt;br/> (%2$d x S%3$.2f)--></string>
     <string name="pay">Pagar</string>
-    <string name="msgShop">Gracias por tu compra, disfuta de tu pizza</string>
+    <string name="msgShop">Gracias por tu compra, disfruta de tu pizza</string>
     <string name="accept">Aceptar</string>
 </resources>

@@ -122,7 +122,7 @@ class ShoppingCartActivity : AppCompatActivity() {
     }
     private fun clearViews(){
         adapter.removeAll()
-        bind.tvCredits.text=String.format("Créditos: %s",50)
+        bind.tvCredits.text=String.format("Créditos: %s",beginCredits-totalPayment)
         bind.tvTotal.text=String.format("Total a pagar: $. %.2f",0.0)
         carIsEmpty=true
     }
