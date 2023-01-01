@@ -1,7 +1,7 @@
 # PizzaBuy
 <img src="https://github.com/hall9zeha/PizzaBuy/blob/main/app/src/debug/ic_launcher-playstore.png" align="left"
 width="20%" hspace="10" vspace="10">
-Aplicación para simular pedidos de pizzas  escrita en Kotlin utilizando el patrón de diseño MVVM.
+Aplicación para simular pedidos de pizzas, escrita en Kotlin utilizando el patrón de arquitectura MVVM.
 
 </br>
 </br>
@@ -12,7 +12,7 @@ Aplicación para simular pedidos de pizzas  escrita en Kotlin utilizando el patr
 </br>
 
 # Objetivo
-Aprender el manejo de [Room database](https://developer.android.com/jetpack/androidx/releases/room?gclid=EAIaIQobChMIh-Hoi7C_-gIVRxXUAR2kZAAsEAAYASAAEgJnivD_BwE&gclsrc=aw.ds) con relaciones complejas de tablas (en este caso una estructura de arbol, Maestro-Detalle-SubDetalle).
+Aprender el manejo de [Room database](https://developer.android.com/jetpack/androidx/releases/room?gclid=EAIaIQobChMIh-Hoi7C_-gIVRxXUAR2kZAAsEAAYASAAEgJnivD_BwE&gclsrc=aw.ds) con relaciones  de tablas más complejas (en este caso una estructura de arbol, Maestro-Detalle-SubDetalle).
 
 # Se utilizó :gear:
 
