@@ -24,7 +24,7 @@ Aprender el manejo de [Room database](https://developer.android.com/jetpack/andr
 * [Navigation component](https://developer.android.com/guide/navigation/navigation-getting-started)
 
 # Demo :file_folder:
-* Descarga la apk [aquí](https://github.com/hall9zeha/PizzaBuy/raw/main/demo/app-debug.app)
+* Descarga la apk [aquí](https://github.com/hall9zeha/PizzaBuy/raw/main/demo/app-debug.apk)
 
 ## A nivel general :memo:
 
