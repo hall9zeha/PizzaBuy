@@ -42,7 +42,7 @@ Aprender el manejo de [Room database](https://developer.android.com/jetpack/andr
 * Los usuarios puede visualizar su carrito para comprobar qué pizzas han añadido al pedido.
 
 ### Screenshots :framed_picture:
-<img src="https://github.com/hall9zeha/PizzaBuy/blob/main/screenshots/Screenshot_1.jpg" alt="drawing" width="35%" height="35%"/> <img src="https://github.com/hall9zeha/PizzaBuy/blob/main/screenshots/Screenshot_2.jpg" alt="drawing" width="35%" height="35%"/>
+<img src="https://github.com/hall9zeha/PizzaBuy/blob/main/screenshots/Screenshot_1.jpg" alt="drawing" width="35%"/> <img src="https://github.com/hall9zeha/PizzaBuy/blob/main/screenshots/Screenshot_2.jpg" alt="drawing" width="35%"/>
 
 ## Pantalla de detalle:
 
@@ -52,8 +52,8 @@ Aprender el manejo de [Room database](https://developer.android.com/jetpack/andr
 * El usuario puede crear una pizza de cuatro trozos. Por lo que la app mostrará el proceso de selección 4 veces, permitiendo eliminar dos toppings/ingredientes por cada cuarto de pizza. 
 
 ### Screenshots :framed_picture:
-<img src="https://github.com/hall9zeha/PizzaBuy/blob/main/screenshots/Screenshot_3.jpg" alt="drawing" width="35%" height="35%"/> <img src="https://github.com/hall9zeha/PizzaBuy/blob/main/screenshots/Screenshot_4.jpg" alt="drawing" width="35%" height="35%"/>
-<img src="https://github.com/hall9zeha/PizzaBuy/blob/main/screenshots/Screenshot_5.jpg" alt="drawing" width="35%" height="35%"/>
+<img src="https://github.com/hall9zeha/PizzaBuy/blob/main/screenshots/Screenshot_3.jpg" alt="drawing" width="35%"/> <img src="https://github.com/hall9zeha/PizzaBuy/blob/main/screenshots/Screenshot_4.jpg" alt="drawing" width="35%"/>
+<img src="https://github.com/hall9zeha/PizzaBuy/blob/main/screenshots/Screenshot_5.jpg" alt="drawing" width="35%"/>
 
 ## Pantalla carrito:
 
@@ -63,12 +63,12 @@ Aprender el manejo de [Room database](https://developer.android.com/jetpack/andr
 * El usuario tiene algunos créditos cargados en la app, por lo que se mostrarán aquí. Si el usuario no tiene suficientes créditos, no podrá acabar el proceso de compra.
 * En el caso de que tenga suficientes créditos, la app permite al usuario realizar el pedido!
 
-<img src="https://github.com/hall9zeha/PizzaBuy/blob/main/screenshots/Screenshot_6.jpg" alt="drawing" width="35%" height="35%"/> <img src="https://github.com/hall9zeha/PizzaBuy/blob/main/screenshots/Screenshot_7.jpg" alt="drawing" width="35%" height="35%"/>
+<img src="https://github.com/hall9zeha/PizzaBuy/blob/main/screenshots/Screenshot_6.jpg" alt="drawing" width="35%"/> <img src="https://github.com/hall9zeha/PizzaBuy/blob/main/screenshots/Screenshot_7.jpg" alt="drawing" width="35%"/>
 
 Pero... ¿qué ocurre si no tienes suficientes créditos en la app?
 
 * Por cada 5 clicks seguidos que el usuario realiza sobre el importe total del carrito, el sistema añadirá $10 a sus créditos.
 
 ## Pantalla buscar
-<img src="https://github.com/hall9zeha/PizzaBuy/blob/main/screenshots/Screenshot_8.jpg" alt="drawing" width="35%" height="35%"/>
+<img src="https://github.com/hall9zeha/PizzaBuy/blob/main/screenshots/Screenshot_8.jpg" alt="drawing" width="35%"/>
 
